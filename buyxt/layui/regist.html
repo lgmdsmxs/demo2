@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>regist</title>
+</head>
+<body>
+	<div class="layui-container-fluid">
+			<div class="layui-row">
+				<div class="layui-col-md4 layui-col-md-offset3">
+					<form class="layui-form">
+						<div class="layui-form-item layui-form-pane">
+							<label class="layui-form-label">username:</label>
+							<div class="layui-input-block">
+								<input type="text" name="username" placeholder="请输入用户名" class="layui-input" lay-verify="required|username">
+							</div>
+						</div>
+						<div class="layui-form-item layui-form-pane">
+							<label class="layui-form-label">password:</label>
+							<div class="layui-input-block">
+								<input type="password" name="password"placeholder="请输入密码" class="layui-input" lay-verify="required|username">
+							</div>
+						</div>
+						<button type="button" class="layui-btn layui-btn-fluid" lay-submit  lay-filter="login"><span class="layui-icon">&#xe612;</span>regist</button>
+
+					</form>
+
+				</div>
+			</div>
+		
+	</div>
+	<link rel="stylesheet" href="css/layui.css">
+	<script src="layui.js"></script>
+	<script>
+		layui.config({
+			base:""
+		}).use("index");
+	</script>
+</body>
+</html>
